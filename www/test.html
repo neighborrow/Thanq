@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<style type="text/css">
+  body { font-family: sans-serif; }
+  div.line { border-bottom:1px solid #A9A9A9; text-indent: 0em; margin-top: 10px; }
+  div.line.indent { text-indent: 3em; }
+  input.send { color: black; }
+  input,select { border: 1px solid #E0E0E0; border-width: 1px 0 0 1px; color: black; background-color: #D0FFD0; }
+  input[type="submit"],input[disabled] { border-width: 1px; background-color: white; }
+  input[disabled] { border-width: 0px; }
+  input::-webkit-input-placeholder { color: #909090; }
+  .right { text-align: right; }
+</style>
+<form method="post"><div id="postcard" style="height:350px;width:540px;border:5px solid black;padding:10px;position:relative;">
+  <div id="stamp" style="position:absolute;top:10px;right:10px;width:75px;height:75px;border:3px solid black;"></div>
+  <div id="left" style="display:inline-block;width:267px;height:100%;border-right:3px solid #A9A9A9;float:left;position:relative;">
+    <div id="form" style="position:absolute;top:20px;right:0px;right:10px;left:5px;">
+      <div class="line">Dear <input type="email" name="receiver" id="theirEmail" placeholder="friend's email" onblur="document.getElementById('toEmail').value=this.value;addStamp();" >,</div>
+      <div class="line">&nbsp;</div>
+      <div class="line">You are <select name="adjective">
+				<option value="awesome">Awesome</option>
+				<option value="generous">Generous</option>
+				<option value="green">Green</option>
+				<option value="responsible">Responsible</option>
+				<option value="courteous">Courteous</option>
+			</select> because</div>
+      <div class="line"><input type="text" name="reason" placeholder="you helped me in the real world." style="width:100%;"></div>
+      <div class="line">on <select name="connection">
+				<?php foreach($System->ClientHandler->getClientList() as $client): if($client->id != 4): ?>
+					<option value="<?= $client->id ?>"><?= $client->name ?></option>
+				<?php endif; endforeach; ?>
+				<option value="4">other</option>
+			</select></div>
+      <div class="line">&nbsp;</div>
+      <div class="line right">Sincerely,</div>
+      <div class="line right"><input type="email" name="giver" id="myEmail" placeholder="Your Email" onblur="addStamp();"></div>
+    </div>
+  </div>
+  <div id="right" style="display:inline-block;width:247px;height:100%;padding-left:20px;float:left;position:relative;">
+   <div id="toField" style="position:absolute;top:150px;right:20px;left:20px;text-align: center;">
+    To: <input type="email" disabled id="toEmail" onclick="document.getElementById('theirEmail').focus();" />
+    <br /><br />
+    <input type="submit" value="Send Compliment!" name="submit" />
+   </div>
+   <div id="submit" style="position:absolute;bottom:0px;right:20px;left:20px;text-align:center;">
+   </div>
+  </div>
+</div></form>
+<script src="./md5-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  function addStamp()
+  {
+	var hash = hex_md5(document.getElementById("theirEmail").value.toLowerCase());
+	var url = "http://www.gravatar.com/avatar/" + hash + "?s=75";
+       document.getElementById("stamp").style.backgroundImage = "url('" + url + "')";
+  }
+  addStamp();
+</script>
