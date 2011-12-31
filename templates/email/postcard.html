@@ -1,0 +1,90 @@
+		<style>
+
+			body { font-family: sans-serif; text-align:center; }
+
+			div.line { border-bottom:1px solid #A9A9A9; text-indent: 0em; margin-top: 10px; }
+
+			div.line-noline { text-indent: 0em; margin-top: 10px; }
+
+			#postcard { display: inline-block;text-align:left; }
+
+			div.line.indent { text-indent: 3em; }
+
+			input.send { color: black; }
+
+			input,select { border: 1px solid #E0E0E0; border-width: 1px 0 0 1px; color: black; background-color: #D0FFD0; }
+
+			input[type="submit"],input[disabled] { border-width: 1px; background-color: white; }
+
+			input[disabled] { border-width: 0px; }
+
+			input::-webkit-input-placeholder { color: #909090; }
+
+			.right { text-align: right; }
+
+			
+
+			#postcard { height: 350px; width: 540px; border:5px solid black; padding: 10px; position: relative; }
+
+			#stamp { position: absolute; top: 10px; right: 10px; width: 75px; height: 75px; border:3px solid black; }
+
+			#left { display: inline-block; width: 264px; padding-right: 5px; height: 100%; border-right:3px solid #A9A9A9; float: left; position: relative; }
+
+			#right { display: inline-block; width: 247px; height: 100%; padding-left: 20px; text-align: center; position: relative; }
+
+			#toField { position: absolute; top: 150px; right: 20px; left: 20px; text-align: center; }
+
+			#submit { position: absolute; bottom: 0px; right: 20px; left: 20px; text-align: center; }
+
+		</style>
+
+		<h1>
+
+			You Received a ThanQ Postcard!
+
+		</h1>
+
+
+			<div id="postcard">
+
+				<div id="stamp"></div>
+
+				<div id="left">
+
+					<div class="line-noline">Dear <?= $this->to ?>,</div>
+
+					<div class="line-noline">&nbsp;</div>
+
+					<div class="line">You are <?= $this->adjective ?> because</div>
+
+					<div class="line"><?= $this->reason ?></div>
+
+					<?php if($this->connection): ?><div class="line">on <?= $this->connection ?></div><?php endif; ?>
+
+					<div class="line">&nbsp;</div>
+
+					<div class="line-noline right">Sincerely,</div>
+
+					<div class="line-noline right">
+
+												<div id="fromEmailOpt"><?= $this->from ?></div>
+
+											</div>
+
+				</div>
+
+				<div id="right">
+
+					<div id="toField">
+
+						To: <?= $this->to ?>
+
+						<br /><br />
+
+					</div>
+
+					<div id="submit"></div>
+
+				</div>
+
+			</div>

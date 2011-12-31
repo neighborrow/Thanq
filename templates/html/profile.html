@@ -1,0 +1,21 @@
+<div>
+	<h1><?= $this->user->get_var("display"); ?> (+<?= $this->karma_count ?>) $?</h1>
+	<?php if(count($this->verifiedDomains)): ?>
+		<ul>
+		<?php foreach($this->verifiedDomains as $domain): ?>
+			<li>Verified user @<?= $domain ?></li>
+		<?php endforeach; ?>
+		</ul>
+	<?php endif; ?>
+</div>
+
+Compliments:
+<?php foreach($this->compliments as $compliment): ?>
+<div style="padding:5px;border:1px solid black;">
+	Sender: <?= $compliment->get_var("sender_id"); ?><br />
+	Receiver: <?= $compliment->get_var("receiver_id"); ?><br />
+	Adjective: <?= $compliment->get_var("adjective"); ?><br />
+	Karma: <?= $compliment->get_var("karma"); ?><br />
+	Reason: <?= $compliment->get_var("reason"); ?><br />
+</div>
+<?php endforeach; ?>

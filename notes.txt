@@ -1,0 +1,19 @@
+`compliments`
+	`receiver_id`
+	`compliment_id`
+	`sender_id`
+	`queued`
+	
+`identifiers`
+	`type` = (email || twitter || facebook || openid)
+	`user_id`
+	`ident_id` (email || service id)
+	`key`	(password [hashed] || service key)
+	
+`users`
+	`id`
+	
+db/compliments/:id/data.json
+db/users/:id/data.json
+
+(files will first be saved as {file}.json.atomic)

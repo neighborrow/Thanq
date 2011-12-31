@@ -1,0 +1,9 @@
+<strong>ERROR:</strong> Such an account exists but has not yet been verified.
+
+<form method="post" action="/verify">
+	<fieldset>
+		<label>Email: <input type="email" name="email" value="<?= $this->email ?>"/></label>
+		<br />
+		<input type="submit" value="Send Verification Email" />
+	</fieldset>
+</form>

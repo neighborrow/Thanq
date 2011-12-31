@@ -1,0 +1,140 @@
+NOTICE - Ran Search for 'navarrb@bgsu.edu' as Ident Type 'email'
+NOTICE - Ran Search for 'navarrb@bgsu.edu' as Ident Type 'email'
+NOTICE - Ran Search for 'navarrb@bgsu.edu' as Ident Type 'email'
+NOTICE - Ran Search for 'navarrb@bgsu.edu' as Ident Type 'email'
+ERROR [2] include(/home/navarrb/blackglasses.net/dev/karma2/library/../templates/html/errors/verify/500.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+	 Error on line 56 in file /home/navarrb/blackglasses.net/dev/karma2/library/template.class.php
+NOTICE - include(/home/navarrb/blackglasses.net/dev/karma2/library/../templates/html/errors/verify/500.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+ERROR [2] include() [<a href='function.include'>function.include</a>]: Failed opening '/home/navarrb/blackglasses.net/dev/karma2/library/../templates/html/errors/verify/500.html' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear')
+	 Error on line 56 in file /home/navarrb/blackglasses.net/dev/karma2/library/template.class.php
+NOTICE - include() [<a href='function.include'>function.include</a>]: Failed opening '/home/navarrb/blackglasses.net/dev/karma2/library/../templates/html/errors/verify/500.html' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear')
+NOTICE - Searching for User by ID 'adam'
+NOTICE - Searching for User by Unique 'adam'
+ERROR [2] Illegal offset type
+	 Error on line 233 in file /home/navarrb/blackglasses.net/dev/karma2/library/user_handler.class.php
+NOTICE - Illegal offset type
+NOTICE - Adding User '4e220e8dcdc0b70e24000013' to the Cache.
+ERROR [2] Illegal offset type
+	 Error on line 72 in file /home/navarrb/blackglasses.net/dev/karma2/library/compliment_handler.class.php
+NOTICE - Illegal offset type
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Calling Upon Default Values
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Returning NULL for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => sender_id
+)
+
+NOTICE - Is Set store[sender_id]
+NOTICE - Returning '4e15f24dcdc0b7570a000001' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => receiver_id
+)
+
+NOTICE - Is Set store[receiver_id]
+NOTICE - Returning '4e220e8dcdc0b70e24000013' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => adjective
+)
+
+NOTICE - Is Set store[adjective]
+NOTICE - Returning 'awesome' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Calling Upon Default Values
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Returning NULL for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => reason
+)
+
+NOTICE - Is Set store[reason]
+NOTICE - Returning 'you created the ThanQ project!' for Variable Query
+NOTICE - Searching for User by ID 'navarr'
+NOTICE - Searching for User by Unique 'navarr'
+ERROR [2] Illegal offset type
+	 Error on line 233 in file /home/navarrb/blackglasses.net/dev/karma2/library/user_handler.class.php
+NOTICE - Illegal offset type
+NOTICE - Adding User '4e15f24dcdc0b7570a000001' to the Cache.
+ERROR [2] Illegal offset type
+	 Error on line 72 in file /home/navarrb/blackglasses.net/dev/karma2/library/compliment_handler.class.php
+NOTICE - Illegal offset type
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Calling Upon Default Values
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Returning NULL for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => sender_id
+)
+
+NOTICE - Is Set store[sender_id]
+NOTICE - Returning '4e15f24dcdc0b7570a000001' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => receiver_id
+)
+
+NOTICE - Is Set store[receiver_id]
+NOTICE - Returning '4e220e8dcdc0b70e24000013' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => adjective
+)
+
+NOTICE - Is Set store[adjective]
+NOTICE - Returning 'awesome' for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Calling Upon Default Values
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => karma
+)
+
+NOTICE - Is Not Set store[karma]
+NOTICE - Returning NULL for Variable Query
+NOTICE - Calling get_var with Args: Array
+(
+    [0] => reason
+)
+
+NOTICE - Is Set store[reason]
+NOTICE - Returning 'you created the ThanQ project!' for Variable Query
